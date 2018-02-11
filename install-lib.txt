@@ -1,0 +1,8 @@
+npm install @angular/forms @ngx-formly/core
+npm install @ngx-formly/bootstrap
+
+
+npm install @ng-bootstrap/ng-bootstrap
+npm install ag-grid ag-grid-angular
+ npm install lodash
+ npm install jsoneditor

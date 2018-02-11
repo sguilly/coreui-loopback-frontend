@@ -1,0 +1,23 @@
+<div class="modalContainer">
+    <div class="titleForm">
+        <h3>Création d'une entité</h3>
+    </div>
+
+    <form class="formly" role="form" novalidate [formGroup]="form" (ngSubmit)="submit(model)">
+        <formly-form [model]="model" [fields]="fields">
+            <button type="cancel" class="btn btn-default" (click)="cancel()">Annuler</button>
+            <button type="submit" class="btn btn-default">Valider</button>
+        </formly-form>
+    </form>
+
+    <div class="mt-5 mb-5">
+        <json-editor [(ngModel)]="model" jsonModal #staticModal="json-modal" [config]="{modes: ['code', 'text', 'tree', 'view'],sortObjectKeys: true}">
+        </json-editor>
+
+
+        <!-- <button (click)="staticModal.collapseAll()">collapseAll</button>
+      <button (click)="staticModal.expandAll()">expandAll</button> -->
+
+    </div>
+
+</div>

@@ -1,0 +1,18 @@
+<div class="btn-group" class="mr-sm-1">
+
+        <ng-select
+            style="width:130px"
+            [options]="entityTypeIdentity" 
+            [(ngModel)]="idValueType" 
+            (selected)="onSelectedType($event)">
+        </ng-select>
+
+        <ng-select
+            style="width:200px"
+            [options]="entities" 
+            [(ngModel)]="idValue" 
+            (selected)="onSelected($event)">
+        </ng-select>
+  
+</div>
+

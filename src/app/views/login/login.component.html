@@ -1,0 +1,47 @@
+<div class="app flex-row align-items-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card-group">
+                    <div class="card p-4">
+                        <div class="card-body">
+
+                            <h1>Login</h1>
+                            <p class="text-muted">Identifiez-vous pour entrer dans votre espace</p>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="icon-user"></i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Votre email" [(ngModel)]="model.email">
+                            </div>
+                            <div class="input-group mb-4">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="icon-lock"></i></span>
+                                </div>
+                                <input type="password" class="form-control" placeholder="Votre mot de passe" [(ngModel)]="model.password">
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    <button type="button" class="btn btn-primary px-4" (click)="login()">Valider</button>
+                                </div>
+                                <div class="col-8 text-right">
+                                    <p class="px-0">Mot de passe oublié ?</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card bg-primary py-5 d-md-down-none" style="width:44%">
+                        <div class="card-body text-center">
+                            <div>
+                                <h2>Vous n'avez pas de compte</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <button type="button" class="btn btn-light active mt-3">Me créer un compte</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
